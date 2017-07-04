@@ -1,4 +1,4 @@
-from fbchat import Client
+from fbchat import Client, log
 from fbchat.models import *
 from ConfigParser import SafeConfigParser
 import logging
@@ -26,4 +26,12 @@ if fbuserpassword == 'BlankPassword':
     print(configerrormessage)
     logging.warning('Password not set in config.ini')
     sys.exit(1)
+
+
+
+client = Client(fbuseremail,fbuserpassword)
+logging.debug('Own id: {}'.format(client.uid))
+client.sendMessage('TestFromCode', thread_id=client.uid, thread_type=ThreadType.USER)
+client.logout()
+#client.listen
 
