@@ -1,7 +1,12 @@
 from fbchat import Client
 from fbchat.models import *
+from ConfigParser import SafeConfigParser
 
-fbuseremail = input('Please Enter your Facebook e-mail address')
-fbuserpassword = input('Please Enter your Facebook password')
+config = SafeConfigParser()
+config.read ('config.ini')
+
+fbuseremail = config.get("FacebookAuthDetails","Email")
+fbuserpassword = config.get("FacebookAuthDetails","Password")
 
 print('Using' $fbuseremail 'as username')
+
