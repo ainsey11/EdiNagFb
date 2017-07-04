@@ -8,5 +8,5 @@ config.read ('config.ini')
 fbuseremail = config.get("FacebookAuthDetails","Email")
 fbuserpassword = config.get("FacebookAuthDetails","Password")
 
-print('Using' $fbuseremail 'as username')
-
+if fbuseremail = "FBEmailAddress"
+    print("You have not set an e-mail address in the config.ini, exiting"
