@@ -1,0 +1,12 @@
+INFO:root:Loaded Configuration
+DEBUG:root:Performing Configuration Validation
+DEBUG:root:Email not set in config.ini
+INFO:root:Loaded Configuration
+DEBUG:root:Performing Configuration Validation
+WARNING:root:Email not set in config.ini
+INFO:root:Loaded Configuration
+DEBUG:root:Performing Configuration Validation
+WARNING:root:Email not set in config.ini
+INFO:root:Loaded Configuration
+DEBUG:root:Performing Configuration Validation
+WARNING:root:Password not set in config.ini
