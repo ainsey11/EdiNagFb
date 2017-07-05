@@ -13,6 +13,7 @@ logging.basicConfig(filename='EdiNagFBDebug.log',level=logging.DEBUG)
 fbuseremail = config.get("FacebookAuthDetails","Email")
 fbuserpassword = config.get("FacebookAuthDetails","Password")
 configerrormessage = config.get("ErrorMessages","ConfigError")
+startmessage = config.get("Messages","StartMessage")
 
 logging.info('Loaded Configuration')
 logging.debug('Performing Configuration Validation')
@@ -31,7 +32,12 @@ if fbuserpassword == 'BlankPassword':
 
 client = Client(fbuseremail,fbuserpassword)
 logging.debug('Own id: {}'.format(client.uid))
-client.sendMessage('TestFromCode', thread_id=client.uid, thread_type=ThreadType.USER)
+
+client.sendMessage(startmessage, thread_id=client.uid, thread_type=ThreadType.USER)
+logging.debug('StartMessage has been sent to own ID')
+
 client.logout()
+logging.info('EdiNagFB logging out of Facebook session')
+
 #client.listen
 
