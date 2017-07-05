@@ -14,6 +14,7 @@ fbuseremail = config.get("FacebookAuthDetails","Email")
 fbuserpassword = config.get("FacebookAuthDetails","Password")
 configerrormessage = config.get("ErrorMessages","ConfigError")
 startmessage = config.get("Messages","StartMessage")
+activatedmessage = config.get("Messages","ActivatedMessage")
 triggeruser = config.get("TriggerInfo","TriggerUser")
 
 logging.info('Loaded Configuration')
@@ -43,7 +44,15 @@ logging.debug('StartMessage has been sent to own ID')
 user = client.searchForUsers(triggeruser)[0]
 print('user ID: {}'.format(user.uid))
 print("user's name: {}".format(user.name))
+triggeruseruid =('user ID: {}'.format(user.uid))
 
+messages = client.fetchThreadMessages(thread_id="100003482325927", limit=1)
+print('Latest Message is:') 
+for message in messages:
+    print(message.text)
+    if message.text == "oi potate":
+        client.sendMessage(activatedmessage, thread_id=triggeruseruid, thread_type=ThreadType.USER)
+	print('OI WAKE UP POTATE')
 
 client.logout()
 logging.info('EdiNagFB logging out of Facebook session')
