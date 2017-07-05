@@ -14,6 +14,7 @@ fbuseremail = config.get("FacebookAuthDetails","Email")
 fbuserpassword = config.get("FacebookAuthDetails","Password")
 configerrormessage = config.get("ErrorMessages","ConfigError")
 startmessage = config.get("Messages","StartMessage")
+triggeruser = config.get("TriggerInfo","TriggerUser")
 
 logging.info('Loaded Configuration')
 logging.debug('Performing Configuration Validation')
@@ -28,7 +29,10 @@ if fbuserpassword == 'BlankPassword':
     logging.warning('Password not set in config.ini')
     sys.exit(1)
 
-
+if triggeruser == 'TriggerUsername':
+    print(configerrormessage)
+    logging.warning('Trigger Username not set in config.ini')
+    sys.exit(1)
 
 client = Client(fbuseremail,fbuserpassword)
 logging.debug('Own id: {}'.format(client.uid))
@@ -36,8 +40,11 @@ logging.debug('Own id: {}'.format(client.uid))
 client.sendMessage(startmessage, thread_id=client.uid, thread_type=ThreadType.USER)
 logging.debug('StartMessage has been sent to own ID')
 
+user = client.searchForUsers(triggeruser)[0]
+print('user ID: {}'.format(user.uid))
+print("user's name: {}".format(user.name))
+
+
 client.logout()
 logging.info('EdiNagFB logging out of Facebook session')
-
-#client.listen
 

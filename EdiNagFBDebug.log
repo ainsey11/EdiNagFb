@@ -147,3 +147,107 @@ DEBUG:urllib3.connectionpool:Setting read timeout to 30
 DEBUG:urllib3.connectionpool:"GET /logout.php?ttstamp=65817111549110845599105120101586581691197349541007068108992&__a=1&__user=1607140776&seq=0&__rev=3134691&h=AfcgY2K0BchHlXNO&fb_dtsg=AQGs1nT7cixe%3AAQEwI16dFDlc&ref=mb&__req=5 HTTP/1.1" 302 0
 DEBUG:urllib3.connectionpool:Setting read timeout to 30
 DEBUG:urllib3.connectionpool:"GET /?stype=lo&jlou=AfdNE3SgBq3I1KkG2t3YOvZfT9hqASqxZOEBw7M3h900GQCW2zEhgLY_buyydKYORU3uwqtLnvx_TG3wz5088z0k&smuh=24935&lh=Ac8H2sl7bHid7N1G&__req=5 HTTP/1.1" 200 None
+INFO:root:Loaded Configuration
+DEBUG:root:Performing Configuration Validation
+WARNING:root:Email not set in config.ini
+INFO:root:Loaded Configuration
+DEBUG:root:Performing Configuration Validation
+INFO:client:Logging in ainsey11@gmail.com...
+INFO:urllib3.connectionpool:Starting new HTTPS connection (1): m.facebook.com
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /?seq=0&__req=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"POST /login.php?login_attempt=1 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /login/?email=ainsey11%40gmail.com&li=KzdcWcTme7DOySNNDj5luDa-&e=1348092&refsrc=https%3A%2F%2Fwww.facebook.com%2F&_rdr HTTP/1.1" 200 None
+WARNING:client:Attempt #1 failed, retrying
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /?seq=0&__req=3 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"POST /login.php?login_attempt=1 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /login/?email=ainsey11%40gmail.com&li=LTdcWc9VJvYpQwkuNnA-HDGU&e=1348092&refsrc=https%3A%2F%2Fwww.facebook.com%2F&_rdr HTTP/1.1" 200 None
+WARNING:client:Attempt #2 failed, retrying
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /?seq=0&__req=5 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"POST /login.php?login_attempt=1 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /login/?email=ainsey11%40gmail.com&li=LzdcWT1cj2roStEB9rJomcny&e=1348092&refsrc=https%3A%2F%2Fwww.facebook.com%2F&_rdr HTTP/1.1" 200 None
+WARNING:client:Attempt #3 failed, retrying
+INFO:root:Loaded Configuration
+DEBUG:root:Performing Configuration Validation
+INFO:client:Logging in ainsey11@gmail.com...
+INFO:urllib3.connectionpool:Starting new HTTPS connection (1): m.facebook.com
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /?seq=0&__req=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"POST /login.php?login_attempt=1 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /home.php?refsrc=https%3A%2F%2Fwww.facebook.com%2F&_rdr HTTP/1.1" 200 None
+INFO:urllib3.connectionpool:Starting new HTTPS connection (1): www.facebook.com
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /?seq=0&__req=3 HTTP/1.1" 200 None
+INFO:client:Login of ainsey11@gmail.com successful.
+DEBUG:root:Own id: 1607140776
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"POST /messaging/send/ HTTP/1.1" 200 None
+DEBUG:root:StartMessage has been sent to own ID
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /logout.php?ttstamp=6581721211168211610310382778358658172118511227065788482972&__a=1&__user=1607140776&seq=0&__rev=3134742&h=AfflnUwIlj768oGt&fb_dtsg=AQHytRtggRMS%3AAQHv3zFANTRa&ref=mb&__req=5 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /?stype=lo&jlou=Aff9BIKfYElAZT1QputL6PyZxYq83y7zm8cw2sFAP01d90pF3dT_0aCUzhi7dQ2bKHl4VzmnMszldJJZSFodp4HM&smuh=24935&lh=Ac_s2Og1NYenbnMe&__req=5 HTTP/1.1" 200 None
+INFO:root:EdiNagFB logging out of Facebook session
+INFO:root:Loaded Configuration
+DEBUG:root:Performing Configuration Validation
+INFO:client:Logging in ainsey11@gmail.com...
+INFO:urllib3.connectionpool:Starting new HTTPS connection (1): m.facebook.com
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /?seq=0&__req=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"POST /login.php?login_attempt=1 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /home.php?refsrc=https%3A%2F%2Fwww.facebook.com%2F&_rdr HTTP/1.1" 200 None
+INFO:urllib3.connectionpool:Starting new HTTPS connection (1): www.facebook.com
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /?seq=0&__req=3 HTTP/1.1" 200 None
+INFO:client:Login of ainsey11@gmail.com successful.
+DEBUG:root:Own id: 1607140776
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"POST /messaging/send/ HTTP/1.1" 200 None
+DEBUG:root:StartMessage has been sent to own ID
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"POST /chat/user_info_all HTTP/1.1" 200 None
+DEBUG:root:users' IDs: <generator object <genexpr> at 0x7fd94b113b90>
+DEBUG:root:users' names: <generator object <genexpr> at 0x7fd94b113b90>
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /logout.php?ttstamp=6581698911110081101116771078558658170681146655505398811002&__a=1&__user=1607140776&seq=0&__rev=3134742&h=AfflnUwIlj768oGt&fb_dtsg=AQEYodQetMkU%3AAQFDrB725bQd&ref=mb&__req=6 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /?stype=lo&jlou=Aff1Rm5nKmggkuxidF9KpWnUQO4AUsGP75gmPDRfcYNBarfg_SeOV1iPpQ-E-HPTVgKyDmsDzELb4Ybv1tibsmGp&smuh=24935&lh=Ac-f9lkSkFVlMAZ7&__req=6 HTTP/1.1" 200 None
+INFO:root:EdiNagFB logging out of Facebook session
+INFO:root:Loaded Configuration
+DEBUG:root:Performing Configuration Validation
+INFO:client:Logging in ainsey11@gmail.com...
+INFO:urllib3.connectionpool:Starting new HTTPS connection (1): m.facebook.com
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /?seq=0&__req=1 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"POST /login.php?login_attempt=1 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /home.php?refsrc=https%3A%2F%2Fwww.facebook.com%2F&_rdr HTTP/1.1" 200 None
+INFO:urllib3.connectionpool:Starting new HTTPS connection (1): www.facebook.com
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /?seq=0&__req=3 HTTP/1.1" 200 None
+INFO:client:Login of ainsey11@gmail.com successful.
+DEBUG:root:Own id: 1607140776
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"POST /messaging/send/ HTTP/1.1" 200 None
+DEBUG:root:StartMessage has been sent to own ID
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"POST /api/graphqlbatch/ HTTP/1.1" 200 None
+DEBUG:client:[{u'Ella Louise Barker': {u'users': {u'nodes': [{u'first_name': u'Ella', u'last_name': u'Barker', u'name': u'Ella Louise Barker', u'is_viewer_friend': True, u'gender': u'FEMALE', u'url': u'https://www.facebook.com/ella.l.barker', u'profile_picture': {u'uri': u'https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-1/p50x50/19029680_1240379166088149_4280408961502345246_n.jpg?oh=312c034112abb80f4ef7e373997c56c8&oe=59C65518'}, u'viewer_affinity': 3.852999985218, u'id': u'100003482325927'}]}}}]
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /logout.php?ttstamp=6581711071001189569481051195258658169779585871157572451182&__a=1&__user=1607140776&seq=0&__rev=3134742&h=AfflnUwIlj768oGt&fb_dtsg=AQGkdv_E0iw4%3AAQEM_UWsKH-v&ref=mb&__req=6 HTTP/1.1" 302 0
+DEBUG:urllib3.connectionpool:Setting read timeout to 30
+DEBUG:urllib3.connectionpool:"GET /?stype=lo&jlou=AfeNAzX689maHqIzzrtchlLYUlkSL-PAAsXrAH7Io8n_a9BudQ7HioOsa_q7SUVSAkvYBL2rspaVa1Z-bkryEyXb&smuh=24935&lh=Ac_4gHnD09hjsgZI&__req=6 HTTP/1.1" 200 None
+INFO:root:EdiNagFB logging out of Facebook session
