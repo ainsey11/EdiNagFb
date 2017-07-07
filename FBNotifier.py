@@ -3,6 +3,7 @@ from fbchat.models import *
 from ConfigParser import SafeConfigParser
 import logging
 import sys
+import time
 
 config = SafeConfigParser()
 config.read ('config.ini')
@@ -55,14 +56,16 @@ print('user ID: {}'.format(user.uid))
 print("user's name: {}".format(user.name))
 triggeruseruid =(user.uid)
 
-messages = client.fetchThreadMessages(thread_id=triggeruseruid, limit=1)
-print('Latest Message is:') 
-for message in messages:
-    print(message.text)
-    if message.text == "oi potate":
-        client.sendMessage(activatedmessage, thread_id=triggeruseruid, thread_type=ThreadType.USER)
-	print('OI WAKE UP POTATE')
+while True:
+    messages = client.fetchThreadMessages(thread_id=triggeruseruid, limit=1)
+    time.sleep(5)
+    for message in messages:
+	print('Last message sent was:')
+        print(message.text)
+        if message.text == "oi potate":
+            client.sendMessage(activatedmessage, thread_id=triggeruseruid, thread_type=ThreadType.USER)
+            print('OI WAKE UP POTATE')
 
-client.logout()
-logging.info('EdiNagFB logging out of Facebook session')
+#client.logout()
+#logging.info('EdiNagFB logging out of Facebook session')
 
