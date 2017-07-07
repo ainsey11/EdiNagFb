@@ -53,9 +53,9 @@ logging.debug('StartMessage has been sent to own ID')
 user = client.searchForUsers(triggeruser)[0]
 print('user ID: {}'.format(user.uid))
 print("user's name: {}".format(user.name))
-triggeruseruid =('user ID: {}'.format(user.uid))
+triggeruseruid =(user.uid)
 
-messages = client.fetchThreadMessages(thread_id="100003482325927", limit=1)
+messages = client.fetchThreadMessages(thread_id=triggeruseruid, limit=1)
 print('Latest Message is:') 
 for message in messages:
     print(message.text)
