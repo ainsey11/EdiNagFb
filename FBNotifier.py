@@ -11,31 +11,40 @@ config.read ('config.ini')
 logging.basicConfig(filename='EdiNagFBDebug.log',level=logging.DEBUG)
 
 fbuseremail = config.get("FacebookAuthDetails","Email")
+logging.debug('Loaded FB Auth E-mail')
 fbuserpassword = config.get("FacebookAuthDetails","Password")
+logging.debug('Loaded FB Auth Password')
 configerrormessage = config.get("ErrorMessages","ConfigError")
+logging.debug('Loaded Configuration Error Message')
 startmessage = config.get("Messages","StartMessage")
+logging.debug('Loaded Startup Message')
 activatedmessage = config.get("Messages","ActivatedMessage")
+logging.debug('Loaded Activated Message')
 triggeruser = config.get("TriggerInfo","TriggerUser")
-
+logging.debug('Loaded Trigger Username')
 logging.info('Loaded Configuration')
 logging.debug('Performing Configuration Validation')
 
 if fbuseremail == 'FBEmailAddress':
     print(configerrormessage)
+    logging.debug('Checking FB E-mail Address is not default')
     logging.warning('Email not set in config.ini')
     sys.exit(1)
 
 if fbuserpassword == 'BlankPassword':
     print(configerrormessage)
+    logging.debug('Checking FB Password is not default')
     logging.warning('Password not set in config.ini')
     sys.exit(1)
 
 if triggeruser == 'TriggerUsername':
     print(configerrormessage)
+    logging.debug('Checking Trigger username is not default')
     logging.warning('Trigger Username not set in config.ini')
     sys.exit(1)
 
 client = Client(fbuseremail,fbuserpassword)
+logging.debug('Fetching own FB UID')
 logging.debug('Own id: {}'.format(client.uid))
 
 client.sendMessage(startmessage, thread_id=client.uid, thread_type=ThreadType.USER)
